@@ -1,0 +1,22 @@
+
+.navbar {
+  opacity: 0.9;
+}
+
+.nav-link {
+  color: #000;
+}
+
+.nav-link:hover {
+  color: #5a5a5a;
+}
+
+.card {
+  /* box-shadow: 0.8px 0.8px 10px 0 #9f9f9f; */
+  opacity: 0.9;
+  border-radius: 10px;
+}
+
+footer {
+  opacity: 0.9;
+}

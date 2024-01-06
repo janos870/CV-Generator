@@ -1,22 +1,20 @@
 {% extends 'pdf/base.html' %}
 
 {% block content %}
-    <div class="container">
-        <div class="row m-5">
-            <div class="col-md-12">
-                <h2>CV Database Profile List</h2>
-            </div>
-        </div>
-        {% for profile in profiles %}
-            <div class="row p-2">
-                <div class="col-md-6">
-                    {{ profile.name }}
-                </div>
-                <div class="col-md-6">
-                    <a href="/{{ profile.id }}" class="btn btn-warning ">Download CV</a>
-                </div>
-            </div>
-            <hr>
-        {% endfor %}
+  <div class="container">
+    <div class="row m-5">
+      <div class="col-md-12">
+        <h2>CV Database Profile List</h2>
+      </div>
     </div>
+    {% for profile in profiles %}
+      <div class="row p-2">
+        <div class="col-md-6">{{ profile.name }}</div>
+        <div class="col-md-6">
+          <a href="/{{ profile.id }}" class="btn btn-warning">Download CV</a>
+        </div>
+      </div>
+      <hr />
+    {% endfor %}
+  </div>
 {% endblock %}
